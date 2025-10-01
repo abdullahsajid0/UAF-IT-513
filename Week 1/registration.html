@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"></link>
+    <title>Online Training Center - Registration</title>
+</head>
+<body>
+    <header>
+        <h1>WebDev Course</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="products.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>User Registration</h2>
+            <form action="registration-success.html" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </p>
+                    <p>
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Account Information</legend>
+                    <p>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required minlength="8">
+                    </p>
+                    <p>
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <p>
+                        <label for="birthdate">Birth Date:</label>
+                        <input type="date" id="birthdate" name="birthdate">
+                    </p>
+                    <p>
+                        <label for="course-level">Course Level:</label>
+                        <select id="course-level" name="course-level">
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Interests:</label><br>
+                        <input type="checkbox" id="frontend" name="interests" value="frontend">
+                        <label for="frontend">Frontend Development</label><br>
+                        
+                        <input type="checkbox" id="backend" name="interests" value="backend">
+                        <label for="backend">Backend Development</label><br>
+                        
+                        <input type="checkbox" id="fullstack" name="interests" value="fullstack">
+                        <label for="fullstack">Full Stack Development</label>
+                    </p>
+                    <p>
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                    </p>
+                </fieldset>
+                
+                <p>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear Form">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Development Course Center. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="products.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p>This website was created in html5 and consists of css styling.</p>
+    </footer>
+</body>
+</html>
