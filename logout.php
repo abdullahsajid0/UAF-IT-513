@@ -1,0 +1,15 @@
+<?php
+/**
+ * LOGOUT PAGE
+ * Destroy user session and logout
+ */
+
+session_start();
+
+// Destroy all session data
+session_destroy();
+
+// Redirect to home page
+header('Location: index.php');
+exit();
+?>
